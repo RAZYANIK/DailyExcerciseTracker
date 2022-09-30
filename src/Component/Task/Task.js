@@ -1,7 +1,7 @@
 import React from 'react';
 import './Task.css'
 const Task = (props) => {
-    const { task } = props;
+    const { handleAssignTask, task } = props;
     const { picture, taskName, timeRequired } = task;
     return (
         <div className='task'>
@@ -10,7 +10,7 @@ const Task = (props) => {
                 <p className='task-name'>{taskName}</p>
                 <p className='task-time'> Allocated Time: {timeRequired} Minutes</p>
             </div>
-            <button className='btn-task-assign'>
+            <button onClick={() => handleAssignTask(props.task)} className='btn-task-assign'>
                 <p>Add to Exercise</p>
             </button>
 

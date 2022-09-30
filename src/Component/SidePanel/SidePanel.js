@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SidePanel.css'
-const SidePanel = () => {
-
+const SidePanel = (props) => {
+    const [breaks, setBreaks] = useState(0);
     const handleAddBreak = (breaks) => {
-        // console.log("clicked",e);
+        setBreaks(breaks);
+        localStorage.setItem('break-time', JSON.stringify(breaks));
+    }
+    const { panel } = props;
+    // console.log(panel);
 
+    let totalTaskAllocationTime = 0;
+    for (const task of panel) {
+        totalTaskAllocationTime = totalTaskAllocationTime + task.timeRequired;
     }
     return (
         <div className='panel'>
@@ -26,19 +33,19 @@ const SidePanel = () => {
             <div className="break-section">
                 <h3>Take a Break</h3>
                 <div className='break-times'>
-                    <button onClick={(e) => handleAddBreak(1)}>
+                    <button onClick={(e) => handleAddBreak(2)}>
                         <span>2 </span> <small>min</small>
                     </button>
-                    <button onClick={(e) => handleAddBreak(2)}>
+                    <button onClick={(e) => handleAddBreak(5)}>
                         <span>5 </span> <small>min</small>
                     </button>
-                    <button onClick={(e) => handleAddBreak(3)}>
+                    <button onClick={(e) => handleAddBreak(10)}>
                         <span>10 </span> <small>min</small>
                     </button>
-                    <button onClick={(e) => handleAddBreak(4)}>
+                    <button onClick={(e) => handleAddBreak(15)}>
                         <span>15 </span> <small>min</small>
                     </button>
-                    <button onClick={(e) => handleAddBreak(5)}>
+                    <button onClick={(e) => handleAddBreak(20)}>
                         <span>20 </span> <small>min</small>
                     </button>
                 </div>
@@ -47,11 +54,11 @@ const SidePanel = () => {
                 <h3>Exercise Time Allocations</h3>
                 <div className='task-time-panel'>
                     <h4>Exercises Time</h4>
-                    <h4>{ } Minutes</h4>
+                    <h4>{totalTaskAllocationTime} Minutes</h4>
                 </div>
                 <div className='break-time-panel'>
                     <h4 >Break Time</h4>
-                    <h4>{ } Minutes</h4>
+                    <h4>{breaks} Minutes</h4>
                 </div>
                 <button className='finish-tasks'>
                     Activity Completed
