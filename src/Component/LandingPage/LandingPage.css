@@ -1,0 +1,67 @@
+.header {
+    background-color: rgb(221, 91, 55);
+
+    padding: 5px;
+}
+
+.header {
+    color: white;
+    text-align: left;
+
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.header h1 {
+    padding-left: 220px;
+}
+
+.header h3 {
+    padding-left: 220px;
+    color: #000003;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: rgba(231, 224, 189, 0.545);
+}
+
+.tasks-container {
+    margin-left: 230px;
+    margin-right: 80px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.panel-container {
+    top: 0;
+    width: 500px;
+
+    margin-top: 50px;
+    margin-bottom: 550px;
+    margin-right: 130px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+/* Mobile Screen Size: 576px  */
+/* Styling for I-Phone 12 Pro */
+@media only screen and (max-width:667px) {
+    .dashboard-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tasks-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 45px;
+    }
+
+    .panel-container {
+        width: 350px;
+        margin-left: 20px;
+    }
+}
