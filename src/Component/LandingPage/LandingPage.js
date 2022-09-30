@@ -1,23 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import SidePanel from '../SidePanel/SidePanel';
 import Task from '../Task/Task';
+
 
 import './LandingPage.css'
 const LandingPage = () => {
     const [tasks, setTasks] = useState([]);
-    const [panel, setPanel] = useState([]);
 
     useEffect(() => {
-        fetch('fakedata.json')
+        fetch('fakadata.json')
             .then(res => res.json())
-            .then(data => setTasks(data));
-    }, []);
-
-    const handleAssignTask = (task) => {
-        // console.log("clicked",task);
-        const newPanel = [...panel, task];
-        setPanel(newPanel);
-    }
+            .then(data => setTasks(data))
+    }, [])
 
     return (
         <div>
@@ -31,15 +24,12 @@ const LandingPage = () => {
                         tasks.map(task => <Task
                             key={task.id}
                             task={task}
-                            handleAssignTask={handleAssignTask}
-                        ></Task>)
+
+                        >
+                        </Task>)
                     }
                 </div>
-                <div className="panel-container">
-                    <SidePanel>
-                        panel={panel}
-                    </SidePanel>
-                </div>
+
             </div>
 
 
