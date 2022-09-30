@@ -25,7 +25,7 @@ const LandingPage = () => {
                 <h1>Daily Exercises Tracker</h1>
                 <h3 >Select Your Today's Exercise</h3>
             </div>
-            <div className='dashboard-container'>
+            <div className='dashboard'>
                 <div className="tasks-container">
                     {
                         tasks.map(task => <Task

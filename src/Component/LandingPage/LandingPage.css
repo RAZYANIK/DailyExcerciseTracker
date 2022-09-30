@@ -21,7 +21,7 @@
     color: #000003;
 }
 
-.dashboard-container {
+.dashboard {
     display: grid;
     grid-template-columns: 4fr 1fr;
     background-color: rgba(231, 224, 189, 0.545);
@@ -51,7 +51,7 @@
 /* Mobile Screen Size: 576px  */
 /* Styling for I-Phone 12 Pro */
 @media only screen and (max-width:667px) {
-    .dashboard-container {
+    .dashboard {
         grid-template-columns: repeat(1, 1fr);
     }
 
