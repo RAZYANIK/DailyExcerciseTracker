@@ -1,17 +1,43 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './SidePanel.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const SidePanel = (props) => {
     const [breaks, setBreaks] = useState(0);
+
+    const retrievedData = JSON.parse(localStorage.getItem('break-time'));
+
+    useEffect(() => {
+        if (retrievedData) {
+            setBreaks(retrievedData)
+        }
+    }, [breaks, retrievedData])
+
     const handleAddBreak = (breaks) => {
         setBreaks(breaks);
         localStorage.setItem('break-time', JSON.stringify(breaks));
     }
+
     const { panel } = props;
-    // console.log(panel);
+
 
     let totalTaskAllocationTime = 0;
+
     for (const task of panel) {
         totalTaskAllocationTime = totalTaskAllocationTime + task.timeRequired;
+    }
+    const notify = () => {
+        toast.success('Congratulations!! your daily Exercises is done.', {
+            position: "top-center",
+
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
     }
     return (
         <div className='panel'>
@@ -60,9 +86,10 @@ const SidePanel = (props) => {
                     <h4 >Break Time</h4>
                     <h4>{breaks} Minutes</h4>
                 </div>
-                <button className='finish-tasks'>
+                <button onClick={notify} className='finish-tasks'>
                     Activity Completed
                 </button>
+                <ToastContainer />
             </div>
         </div>
     );

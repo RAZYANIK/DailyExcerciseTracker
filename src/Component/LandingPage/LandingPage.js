@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import SidePanel from '../SidePanel/SidePanel';
 import Task from '../Task/Task';
-
-
 import './LandingPage.css'
+
+
 const LandingPage = () => {
     const [tasks, setTasks] = useState([]);
     const [panel, setPanel] = useState([]);
