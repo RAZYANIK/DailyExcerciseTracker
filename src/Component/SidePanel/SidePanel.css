@@ -1,21 +1,21 @@
-.panel {
+.user-panel {
     padding-top: 30px;
-    color: white;
+    color: rgb(219, 94, 16);
     border: 3px solid orangered;
     border-radius: 0px;
     height: 854px;
 }
 
-.panel img {
+.user-panel img {
     width: 100%;
 }
 
-.panel .name {
+.user-panel .User {
     text-align: center;
     color: black;
 }
 
-.name img {
+.User img {
     height: 60px;
     width: 60px;
     border-radius: 30px;
@@ -23,7 +23,7 @@
 
 }
 
-.personal-info {
+.user-info {
     margin: 0px 5px;
     padding: 10px 30px;
     border-radius: 20px;
@@ -51,7 +51,7 @@
     text-align: center;
 }
 
-.break-times {
+.break-btn {
     background-color: rgb(0, 0, 0);
     margin: 30px 35px;
     display: flex;
@@ -60,7 +60,7 @@
     justify-content: space-evenly;
 }
 
-.break-times button {
+.break-btn button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,17 +74,17 @@
 }
 
 
-.break-times button:hover {
+.break-btn button:hover {
     color: white;
     background-color: rgb(245, 94, 7);
 }
 
-.task-details-section h3 {
+.task-details h3 {
     text-align: center;
 }
 
-.task-time-panel,
-.break-time-panel {
+.task-panel,
+.break-panel {
     display: flex;
     justify-content: space-around;
     background-color: rgb(0, 0, 0);
@@ -95,18 +95,12 @@
     border-radius: 0px;
 }
 
-
-
-/* .task-details-section h5 {
-    font-weight: 800;
-} */
-
 .finish-tasks {
     display: block;
     margin: auto;
     width: 50%;
     padding: 15px;
-    margin-top: 50px;
+    margin-top: 72px;
     border-radius: 0px;
     color: rgb(0, 0, 0);
 

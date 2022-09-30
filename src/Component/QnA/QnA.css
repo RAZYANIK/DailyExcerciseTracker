@@ -1,8 +1,12 @@
+.qa {
+    text-align: center;
+}
+
 h1 {
     color: white;
 }
 
-.qna-section {
+.QnA {
     background-color: rgb(0, 0, 0);
     color: rgb(206, 191, 23);
     padding: 20px;

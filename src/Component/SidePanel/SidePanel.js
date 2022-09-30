@@ -40,15 +40,15 @@ const SidePanel = (props) => {
         });
     }
     return (
-        <div className='panel'>
-            <div className='name'>
+        <div className='user-panel'>
+            <div className='User'>
                 <img src="https://www.formula1points.com/images/driver/charles-leclerc.jpg" alt="" />
                 <h3>
                     Charles Leclerc
                 </h3>
                 <p>Monte Carlo, Monaco</p>
             </div>
-            <div className='personal-info'>
+            <div className='user-info'>
                 <div className="info">
                     <h4><span>69 Kgs</span> <br />Weigth</h4>
                     <h4><span>1.78 m</span><br />
@@ -57,8 +57,8 @@ const SidePanel = (props) => {
                 </div>
             </div>
             <div className="break-section">
-                <h3>Take a Break</h3>
-                <div className='break-times'>
+                <h3>Take a break for</h3>
+                <div className='break-btn'>
                     <button onClick={(e) => handleAddBreak(2)}>
                         <span>2 </span> <small>min</small>
                     </button>
@@ -76,13 +76,13 @@ const SidePanel = (props) => {
                     </button>
                 </div>
             </div>
-            <div className="task-details-section">
+            <div className="task-details">
                 <h3>Exercise Time Allocations</h3>
-                <div className='task-time-panel'>
+                <div className='task-panel'>
                     <h4>Exercises Time</h4>
                     <h4>{totalTaskAllocationTime} Minutes</h4>
                 </div>
-                <div className='break-time-panel'>
+                <div className='break-panel'>
                     <h4 >Break Time</h4>
                     <h4>{breaks} Minutes</h4>
                 </div>
