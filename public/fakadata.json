@@ -1,0 +1,44 @@
+[
+  {
+    "id": "123633584dbe81de66de19b379e",
+    "picture": "https://media.istockphoto.com/photos/side-view-of-beautiful-muscular-woman-running-on-treadmill-picture-id1132086660?k=20&m=1132086660&s=612x612&w=0&h=UTXXsDbUuREHV0UwHThgI144yKyReetDYlIL5C6_JoI=",
+    "taskName": "Running",
+    "timeRequired": 10
+  },
+  {
+    "id": "321633584db8bffce4d5df44b98",
+    "picture": "https://thefitnessphantom.com/wp-content/uploads/2021/09/Gym-Workout-Plan-For-Women-and-Men.jpg",
+    "taskName": "Deadlift",
+    "timeRequired": 20
+  },
+  {
+    "id": "4311633584db040a0733052d0303",
+    "picture": "https://cdn.muscleandstrength.com/sites/default/files/field/feature-wide-image/workout/calisthenics_for_lifters_-_1000x500.jpg",
+    "taskName": "Push Ups",
+    "timeRequired": 15
+  },
+  {
+    "id": "1321633584db194cb2728057ea96",
+    "picture": "https://hips.hearstapps.com/ame-prod-menshealth-assets.s3.amazonaws.com/main/thumbs/28251/lungeman.jpg",
+    "taskName": "Walking Lunges",
+    "timeRequired": 10
+  },
+  {
+    "id": "4311633584db30cc4a6036fd2384",
+    "picture": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2022/01/30/16435701670628.jpg",
+    "taskName": "Crunch",
+    "timeRequired": 15
+  },
+  {
+    "id": "1212633584db63826cf9b2be6cf1",
+    "picture": "https://hips.hearstapps.com/hmg-prod/images/hdm119918mh15842-1545237096.png",
+    "taskName": "Plank",
+    "timeRequired": 2
+  },
+  {
+    "id": "1122633584db46097a0f0aeb3869",
+    "picture": "https://www.mensjournal.com/wp-content/uploads/2017/04/absmain_.jpg?w=900&quality=84&strip=all",
+    "taskName": "Abs Exercise",
+    "timeRequired": 15
+  }
+]
