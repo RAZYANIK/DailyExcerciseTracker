@@ -1,0 +1,126 @@
+.panel {
+    padding-top: 30px;
+    color: white;
+    border: 3px solid orangered;
+    border-radius: 0px;
+    height: 854px;
+}
+
+.panel img {
+    width: 100%;
+}
+
+.panel .name {
+    text-align: center;
+    color: black;
+}
+
+.name img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+
+
+}
+
+.personal-info {
+    margin: 0px 5px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.month {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(3, 3, 3);
+    border-radius: 0px;
+}
+
+.info span {
+    font-size: 25px;
+}
+
+
+
+.break-section h3 {
+    text-align: center;
+}
+
+.break-times {
+    background-color: rgb(0, 0, 0);
+    margin: 30px 35px;
+    display: flex;
+    padding: 20px 0px;
+    border-radius: 0px;
+    justify-content: space-evenly;
+}
+
+.break-times button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: rgb(1, 1, 1);
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.break-times button:hover {
+    color: white;
+    background-color: rgb(245, 94, 7);
+}
+
+.task-details-section h3 {
+    text-align: center;
+}
+
+.task-time-panel,
+.break-time-panel {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    margin: 10px 35px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-align: center;
+    border-radius: 0px;
+}
+
+
+
+/* .task-details-section h5 {
+    font-weight: 800;
+} */
+
+.finish-tasks {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 0px;
+    color: rgb(0, 0, 0);
+
+    font-weight: 800;
+    border: 2px solid black;
+    background-color: rgb(210, 93, 9);
+}
+
+.finish-tasks:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width:667px) {
+    .finish-tasks {
+        margin-bottom: 40px;
+    }
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SidePanel from '../SidePanel/SidePanel';
 import Task from '../Task/Task';
 
 
@@ -28,6 +29,12 @@ const LandingPage = () => {
                         >
                         </Task>)
                     }
+                </div>
+                <div className='panel-container'>
+                    <SidePanel
+
+                    ></SidePanel>
+
                 </div>
 
             </div>
